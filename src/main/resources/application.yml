@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: crm-spring-boot
+
+app:
+  dynamodb:
+    region: us-east-1
+    entity-a-table: entity_a
+    entity-b-table: entity_b
+    entity-c-table: entity_c
+    # Optional local endpoint override, e.g. http://localhost:8000
+    # endpoint:
+
+# AWS authentication is resolved via the default credential provider chain:
+# - AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY / AWS_SESSION_TOKEN
+# - or shared credentials file (~/.aws/credentials)
+# - or IAM roles (EC2/ECS/Lambda)
